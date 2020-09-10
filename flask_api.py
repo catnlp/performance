@@ -6,6 +6,7 @@
 from flask import Flask
 from flask_restful import Resource, Api
 from time import sleep
+from json import dumps
 
 app = Flask(__name__)
 api = Api(app)
@@ -13,9 +14,9 @@ api = Api(app)
 
 class Root(Resource):
     def get(self):
-        print('睡10秒')
-        sleep(10)
-        print('醒了')
+        # print('睡10秒')
+        # sleep(10)
+        # print('醒了')
         return {'message': 'hello'}
 
 
